@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>click | jackharrhy</title>
+		<link rel="stylesheet" href="style.css">
+	 </head>
+  <body>
+    <div id="top">
+      <h1>click</h1>
+      <div id="clicker" onclick="clicks++; cashMoney++; info.update();"></div>
+    </div>
+  
+    <div id="left">
+      <div id="info">
+        <h2>Cash Money</h2>
+        <p id="cashMoney">...</p>
+        
+        <h2>Total Clicks</h2>
+        <p id="clicks">...</p>
+      </div>
+    </div>
+     
+    <div id="right">
+      <div id="store">
+        <p><span id="hoboPrice" onclick="attemptToPurchase('hobo'); info.update();">...</span> Dirty Hobo <span id="hoboCounter">...</span></p>
+        <p><span id="duckPrice" onclick="attemptToPurchase('duck'); info.update();">...</span> Sick Duck <span id="duckCounter">...</span></p>
+      </div>
+    </div>
+    
+    <script src="click.js"></script>
+  </body>
+</html>
